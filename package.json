@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "start": "wp-scripts start assets/patterns/banner.js src/index.js"
+  },
+  "dependencies": {
+    "@wordpress/scripts": "^24.6.0"
+  },
+  "name": "mypixeltheme",
+  "version": "1.0.0",
+  "description": "Wordpress block theme",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zabamd/MyPixelTheme.git"
+  },
+  "author": "Amadeusz Zabierowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zabamd/MyPixelTheme/issues"
+  },
+  "homepage": "https://github.com/Zabamd/MyPixelTheme#readme"
+}

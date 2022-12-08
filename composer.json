@@ -1,0 +1,10 @@
+{
+    "name": "zabamd/my-pixel-theme",
+    "authors": [
+        {
+            "name": "zabierowski",
+            "email": "zabierowski@nomachine.com"
+        }
+    ],
+    "require": {}
+}
