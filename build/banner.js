@@ -95,9 +95,6 @@ wp.blocks.registerBlockType("MyPixelTheme/banner", {
   edit: editComponent,
   save: saveComponent
 });
-function saveComponent() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "This is my first block");
-}
 function editComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "bannerContainer"
@@ -106,6 +103,9 @@ function editComponent() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, "Aloha!"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, "Welcome to tropical paradise"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "#"
   }, "Click me!")));
+}
+function saveComponent() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "This is my first block");
 }
 }();
 /******/ })()

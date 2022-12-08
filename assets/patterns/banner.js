@@ -4,9 +4,6 @@ wp.blocks.registerBlockType("MyPixelTheme/banner", {
   save: saveComponent,
 });
 
-function saveComponent() {
-  return <p>This is my first block</p>;
-}
 function editComponent() {
   return (
     <div className="bannerContainer">
@@ -17,4 +14,8 @@ function editComponent() {
       </div>
     </div>
   );
+}
+
+function saveComponent() {
+  return <p>This is my first block</p>;
 }
