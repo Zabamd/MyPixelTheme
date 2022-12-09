@@ -122,12 +122,26 @@ wp.blocks.registerBlockType("mypixeltheme/banner", {
   edit: editComponent,
   save: saveComponent
 });
+const CONTENT_TEMPLATE = [["core/heading", {
+  placeholder: "Header",
+  className: "heading",
+  level: 1
+}], ["core/heading", {
+  placeholder: "Sub Header",
+  className: "sub-heading",
+  level: 2
+}]];
+const ALLOWED_BLOCKS = ["core/paragraph", "core/heading", "core/list"];
 function editComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-wrapper"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-banner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, null)));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
+    orientation: "vertical",
+    template: CONTENT_TEMPLATE,
+    allowedBlocks: ALLOWED_BLOCKS
+  })));
 }
 function saveComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
