@@ -6,8 +6,8 @@ function my_pixel_theme_setup()
     add_theme_support("wp-block-styles");
     add_editor_style("editor-style.css");
     add_editor_style([
-        get_stylesheet_uri() . "/build/banner.css",
-        get_stylesheet_uri() . "/build/index.css",
+        "/build/banner.css",
+        "/build/index.css",
     ]);
 }
 
@@ -15,10 +15,10 @@ add_action("after_setup_theme", "my_pixel_theme_setup");
 
 function enqueue_theme_styles()
 {
-    wp_enqueue_style("main-style", get_stylesheet_uri() . "/style.css");
+    wp_enqueue_style("main_style", get_stylesheet_uri());
     wp_enqueue_style(
-        "banner-style",
-        get_stylesheet_uri() . "/build/banner.css"
+        "banner_style",
+        get_theme_file_uri("/build/banner.css")
     );
 }
 

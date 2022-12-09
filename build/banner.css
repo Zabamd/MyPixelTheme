@@ -2,15 +2,19 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/css/banner.css ***!
   \***************************************************************************************************************************************************************************/
 .page-banner {
+  background-image: url(images/banner.c69b3522.jpg);
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-size:cover;
 }
 .headline {
   color: brown;
 }
+
+
 
 /*# sourceMappingURL=banner.css.map*/
