@@ -1,10 +1,10 @@
 {
-    "name": "zabamd/my-pixel-theme",
-    "authors": [
-        {
-            "name": "Amadeusz Zabierowski",
-            "email": "contact@amadeuszzabierowski.net"
-        }
-    ],
-    "require": {}
+  "name": "zabamd/my-pixel-theme",
+  "authors": [
+    {
+      "name": "Amadeusz Zabierowski",
+      "email": "contact@amadeuszzabierowski.net"
+    }
+  ],
+  "require": {}
 }

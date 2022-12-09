@@ -1,0 +1,16 @@
+/*!***************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/css/banner.css ***!
+  \***************************************************************************************************************************************************************************/
+.page-banner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headline {
+  color: brown;
+}
+
+/*# sourceMappingURL=banner.css.map*/

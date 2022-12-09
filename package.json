@@ -1,15 +1,17 @@
 {
   "scripts": {
-    "start": "wp-scripts start assets/patterns/banner.js src/index.js"
+    "start": "wp-scripts start assets/patterns/banner.js src/index.js",
+    "build": "wp-scripts build",
+    "clean": "prettier * --write"
   },
   "dependencies": {
+    "@wordpress/blocks": "^11.21.0",
     "@wordpress/scripts": "^24.6.0"
   },
   "name": "mypixeltheme",
   "version": "1.0.0",
   "description": "Wordpress block theme",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Zabamd/MyPixelTheme.git"
