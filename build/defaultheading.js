@@ -123,13 +123,13 @@ wp.blocks.registerBlockType("mypixeltheme/defaultheading", {
   save: saveComponent
 });
 const CONTENT_TEMPLATE = [["core/paragraph", {
-  className: "first",
+  className: "regularHeader",
   placeholder: "Lorem ipsum dolor sit amet"
 }], ["core/paragraph", {
-  className: "second",
+  className: "largeHeader",
   placeholder: "Consectetur adipiscing elit"
 }], ["core/paragraph", {
-  className: "third",
+  className: "smallHeader",
   placeholder: "Proin interdum eu ligula ut faucibus"
 }]];
 const ALLOWED_BLOCKS = ["core/paragraph"];

@@ -10,15 +10,15 @@ wp.blocks.registerBlockType("mypixeltheme/defaultheading", {
 const CONTENT_TEMPLATE = [
   [
     "core/paragraph",
-    { className: "first", placeholder: "Lorem ipsum dolor sit amet" },
+    { className: "regularHeader", placeholder: "Lorem ipsum dolor sit amet" },
   ],
   [
     "core/paragraph",
-    { className: "second", placeholder: "Consectetur adipiscing elit" },
+    { className: "largeHeader", placeholder: "Consectetur adipiscing elit" },
   ],
   [
     "core/paragraph",
-    { className: "third", placeholder: "Proin interdum eu ligula ut faucibus" },
+    { className: "smallHeader", placeholder: "Proin interdum eu ligula ut faucibus" },
   ],
 ];
 

@@ -1,3 +1,15 @@
 {
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "primarybg", "color": "#5CA8CE70", "name": "Primary Background" },
+        { "slug": "highlight", "color": "#ffa500", "name": "Primary Highlight" },
+        { "slug": "secondarybg", "color": "#EA804F5C", "name": "Secondary Background" }
+      ]
+    },
+    "layout": {
+      "contentSize": "840px"
+    }
+  }
 }
