@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./assets/style/banner.css":
-/*!*********************************!*\
-  !*** ./assets/style/banner.css ***!
-  \*********************************/
+/***/ "./assets/style/contentsection.css":
+/*!*****************************************!*\
+  !*** ./assets/style/contentsection.css ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -105,53 +105,51 @@ module.exports = window["wp"]["element"];
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!***********************************!*\
-  !*** ./assets/patterns/banner.js ***!
-  \***********************************/
+/*!*******************************************!*\
+  !*** ./assets/patterns/contentsection.js ***!
+  \*******************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_banner_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/banner.css */ "./assets/style/banner.css");
+/* harmony import */ var _style_contentsection_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/contentsection.css */ "./assets/style/contentsection.css");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
-wp.blocks.registerBlockType("mypixeltheme/banner", {
-  title: "Banner",
+wp.blocks.registerBlockType("mypixeltheme/contentsection", {
+  title: "ContentSection",
   edit: editComponent,
   save: saveComponent
 });
-const CONTENT_TEMPLATE = [["core/heading", {
-  placeholder: "Header",
-  className: "heading",
-  level: 1
-}], ["core/heading", {
-  placeholder: "Sub Header",
-  className: "sub-heading",
-  level: 2
-}]];
-const ALLOWED_BLOCKS = ["core/paragraph", "core/heading", "core/list"];
+const ALLOWED_BLOCKS = ["core/heading", "core/paragraph", "core/list", "core/image", "core/group"];
+const CONTENT_TEMPLATE = [["core/columns", {}, [["core/column", {}, [["core/heading", {
+  level: 1,
+  placeholder: "Section heading",
+  className: "contentSectionHeading"
+}]]], ["core/column", {}, [["core/paragraph", {
+  placeholder: "Section Paragraph",
+  className: "contentSectionParagraph"
+}]]]]]];
 function editComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner-wrapper"
+    className: "sectionWrapper"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "page-banner"
+    className: "section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-    orientation: "vertical",
     template: CONTENT_TEMPLATE,
     allowedBlocks: ALLOWED_BLOCKS
   })));
 }
 function saveComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner-wrapper"
+    className: "sectionWrapper"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "page-banner"
+    className: "section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null)));
 }
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=banner.js.map
+//# sourceMappingURL=contentsection.js.map

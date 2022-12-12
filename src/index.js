@@ -1,1 +1,1 @@
-//used for importing theme fiiles to be later interpreted by webpack
+//used for importing theme files to be later interpreted by webpack

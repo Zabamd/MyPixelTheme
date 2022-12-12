@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "wp-scripts start assets/patterns/banner.js src/index.js",
+    "start": "wp-scripts start assets/patterns/banner.js assets/patterns/contentsection.js src/index.js",
     "build": "wp-scripts build",
     "clean": "prettier * --write"
   },
