@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); 
+.defaultHeadingWrapper {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+.defaultHeadingWrapper> p:first-child {
+    font-size: 36px;
+}
+.defaultHeadingWrapper > p:nth-child(2n) {
+    color: orange;
+    font-size: 36px;
+}
+.defaultHeadingWrapper > p:nth-child(2n+3) {
+    font-size: 30px;
+}

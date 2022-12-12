@@ -2,9 +2,9 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./assets/style/contentsection.css":
+/***/ "./assets/style/defaultheading.css":
 /*!*****************************************!*\
-  !*** ./assets/style/contentsection.css ***!
+  !*** ./assets/style/defaultheading.css ***!
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -106,50 +106,48 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 /*!*******************************************!*\
-  !*** ./assets/patterns/contentsection.js ***!
+  !*** ./assets/patterns/defaultheading.js ***!
   \*******************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_contentsection_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/contentsection.css */ "./assets/style/contentsection.css");
+/* harmony import */ var _style_defaultheading_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/defaultheading.css */ "./assets/style/defaultheading.css");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
-wp.blocks.registerBlockType("mypixeltheme/contentsection", {
-  title: "Content Section",
+wp.blocks.registerBlockType("mypixeltheme/defaultheading", {
+  title: "Default heading",
   edit: editComponent,
   save: saveComponent
 });
-const ALLOWED_BLOCKS = ["core/heading", "core/paragraph", "core/list", "core/image", "core/group"];
-const CONTENT_TEMPLATE = [["core/columns", {}, [["core/column", {}, [["core/heading", {
-  level: 1,
-  placeholder: "Section heading",
-  className: "contentSectionHeading"
-}]]], ["core/column", {}, [["core/paragraph", {
-  placeholder: "Section Paragraph",
-  className: "contentSectionParagraph"
-}]]]]]];
+const CONTENT_TEMPLATE = [["core/paragraph", {
+  className: "first",
+  placeholder: "Lorem ipsum dolor sit amet"
+}], ["core/paragraph", {
+  className: "second",
+  placeholder: "Consectetur adipiscing elit"
+}], ["core/paragraph", {
+  className: "third",
+  placeholder: "Proin interdum eu ligula ut faucibus"
+}]];
+const ALLOWED_BLOCKS = ["core/paragraph"];
 function editComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "sectionWrapper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "section"
+    className: "defaultHeadingWrapper"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
     template: CONTENT_TEMPLATE,
     allowedBlocks: ALLOWED_BLOCKS
-  })));
+  }));
 }
 function saveComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "sectionWrapper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "section"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null)));
+    className: "defaultHeadingWrapper"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null));
 }
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=contentsection.js.map
+//# sourceMappingURL=defaultheading.js.map

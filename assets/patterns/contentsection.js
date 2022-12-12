@@ -2,7 +2,7 @@ import "../style/contentsection.css";
 import { InnerBlocks } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/contentsection", {
-  title: "ContentSection",
+  title: "Content Section",
   edit: editComponent,
   save: saveComponent,
 });

@@ -8,14 +8,10 @@ wp.blocks.registerBlockType("mypixeltheme/banner", {
 });
 
 const CONTENT_TEMPLATE = [
-  ["core/heading", { placeholder: "Header", className: "heading", level: 1 }],
-  [
-    "core/heading",
-    { placeholder: "Sub Header", className: "sub-heading", level: 2 },
-  ],
+  ["mypixeltheme/defaultheading"]
 ];
 
-const ALLOWED_BLOCKS = ["core/paragraph", "core/heading", "core/list"];
+const ALLOWED_BLOCKS = ["core/paragraph", "core/heading","mypixeltheme/defaultheading", "core/image","core/group"];
 
 function editComponent() {
   return (

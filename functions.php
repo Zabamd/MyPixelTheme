@@ -29,5 +29,7 @@ $theme = new MyPixelTheme();
 //Blocks init
 $banner = new Block("banner");
 $contentSection = new Block("contentsection");
+$defaultHeading = new Block("defaultheading");
+
 
 ?>
