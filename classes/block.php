@@ -8,12 +8,12 @@ class Block
         $this->blockName = $name;
         add_action("init", [$this, "blockInit"]);
     }
-    public function blockInit() : void
+    public function blockInit(): void
     {
         $this->registerBlock();
         $this->registerStyles();
     }
-    private function registerStyles() : void
+    private function registerStyles(): void
     {
         wp_enqueue_style(
             $this->blockName . "_style",
@@ -21,7 +21,7 @@ class Block
         );
         add_editor_style(["/build/" . $this->blockName . ".css"]);
     }
-    private function registerBlock() : void
+    private function registerBlock(): void
     {
         wp_register_script(
             $this->blockName . "BlockScript",

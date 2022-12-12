@@ -1,5 +1,5 @@
 <?php
-require_once 'classes/block.php';
+require_once "classes/block.php";
 
 //Theme setup
 class MyPixelTheme
