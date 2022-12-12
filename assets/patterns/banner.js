@@ -1,4 +1,4 @@
-import "../css/banner.css";
+import "../style/banner.css";
 import { InnerBlocks } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/banner", {
@@ -8,8 +8,11 @@ wp.blocks.registerBlockType("mypixeltheme/banner", {
 });
 
 const CONTENT_TEMPLATE = [
-  ["core/heading", { placeholder: "Header", className:"heading", level:1 }],
-  ["core/heading", { placeholder: "Sub Header" , className:"sub-heading", level:2}],
+  ["core/heading", { placeholder: "Header", className: "heading", level: 1 }],
+  [
+    "core/heading",
+    { placeholder: "Sub Header", className: "sub-heading", level: 2 },
+  ],
 ];
 
 const ALLOWED_BLOCKS = ["core/paragraph", "core/heading", "core/list"];
@@ -19,7 +22,7 @@ function editComponent() {
     <div className="banner-wrapper">
       <div className="page-banner">
         <InnerBlocks
-          orientation='vertical'
+          orientation="vertical"
           template={CONTENT_TEMPLATE}
           allowedBlocks={ALLOWED_BLOCKS}
         />
@@ -37,11 +40,3 @@ function saveComponent() {
     </div>
   );
 }
-
-/*         
-`       <h1 className="headline">Aloha!</h1>
-        <h2 className="sub-headline">Welcome to paradise</h2>
-        <a href="#" className="btn btn--large btn--blue">
-          Click Me!
-        </a>
- */

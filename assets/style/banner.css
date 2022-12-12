@@ -1,5 +1,5 @@
 .page-banner {
-  background-image: url('../img/banner.jpg');
+  background-image: url("../img/banner.jpg");
   width: 100vw;
   height: 70vh;
   display: flex;
