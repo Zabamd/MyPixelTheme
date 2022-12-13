@@ -1,22 +1,15 @@
 import "../style/banner.css";
-import {
-  InnerBlocks,
-  InspectorControls,
-  MediaUpload,
-  MediaUploadCheck,
-} from "@wordpress/block-editor";
-import { Button, PanelBody, PanelRow } from "@wordpress/components";
+import { InnerBlocks } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/banner", {
   title: "Banner",
-  category: "MyPixelTheme",
   edit: editComponent,
   save: saveComponent,
 });
 
-const contentTemplate = [["mypixeltheme/defaultheading"]];
+const CONTENT_TEMPLATE = [["mypixeltheme/defaultheading"]];
 
-const allowedBlocks = [
+const ALLOWED_BLOCKS = [
   "core/paragraph",
   "core/heading",
   "mypixeltheme/defaultheading",
@@ -28,19 +21,10 @@ function editComponent() {
   return (
     <div className="banner-wrapper">
       <div className="page-banner">
-        <InspectorControls>
-          <PanelBody title="Background Image Upload" initialOpen={true}>
-            <MediaUploadCheck>
-              <MediaUpload onSelect={} value={} render={({ open }) => {
-                return <Button onClick={ open } >Choose Image</Button>
-              }} />
-            </MediaUploadCheck>
-          </PanelBody>
-        </InspectorControls>
         <InnerBlocks
           orientation="vertical"
-          template={contentTemplate}
-          allowedBlocks={allowedBlocks}
+          template={CONTENT_TEMPLATE}
+          allowedBlocks={ALLOWED_BLOCKS}
         />
       </div>
     </div>
