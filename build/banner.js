@@ -122,8 +122,8 @@ wp.blocks.registerBlockType("mypixeltheme/banner", {
   edit: editComponent,
   save: saveComponent
 });
-const CONTENT_TEMPLATE = [["mypixeltheme/defaultheading"]];
-const ALLOWED_BLOCKS = ["core/paragraph", "core/heading", "mypixeltheme/defaultheading", "core/image", "core/group"];
+const contentTemplate = [["mypixeltheme/defaultheading"]];
+const allowedBlocks = ["core/paragraph", "core/heading", "mypixeltheme/defaultheading", "core/image", "core/group"];
 function editComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner-wrapper"
@@ -131,8 +131,8 @@ function editComponent() {
     className: "page-banner"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
     orientation: "vertical",
-    template: CONTENT_TEMPLATE,
-    allowedBlocks: ALLOWED_BLOCKS
+    template: contentTemplate,
+    allowedBlocks: allowedBlocks
   })));
 }
 function saveComponent() {

@@ -7,7 +7,7 @@ wp.blocks.registerBlockType("mypixeltheme/defaultheading", {
   save: saveComponent,
 });
 
-const CONTENT_TEMPLATE = [
+const contentTemplate = [
   [
     "core/paragraph",
     { className: "regularHeader", placeholder: "Lorem ipsum dolor sit amet" },
@@ -18,15 +18,18 @@ const CONTENT_TEMPLATE = [
   ],
   [
     "core/paragraph",
-    { className: "smallHeader", placeholder: "Proin interdum eu ligula ut faucibus" },
+    {
+      className: "smallHeader",
+      placeholder: "Proin interdum eu ligula ut faucibus",
+    },
   ],
 ];
 
-const ALLOWED_BLOCKS = ["core/paragraph"];
+const allowedBlocks = ["core/paragraph"];
 function editComponent() {
   return (
     <div className="defaultHeadingWrapper">
-      <InnerBlocks template={CONTENT_TEMPLATE} allowedBlocks={ALLOWED_BLOCKS} />
+      <InnerBlocks template={contentTemplate} allowedBlocks={allowedBlocks} />
     </div>
   );
 }

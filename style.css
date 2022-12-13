@@ -3,3 +3,7 @@
 *Author: Amadeusz
 *Version: 1.0.0
 */
+
+body {
+    background-color: var(--wp--preset--color--pagebackground);
+}

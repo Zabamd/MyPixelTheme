@@ -122,7 +122,7 @@ wp.blocks.registerBlockType("mypixeltheme/defaultheading", {
   edit: editComponent,
   save: saveComponent
 });
-const CONTENT_TEMPLATE = [["core/paragraph", {
+const contentTemplate = [["core/paragraph", {
   className: "regularHeader",
   placeholder: "Lorem ipsum dolor sit amet"
 }], ["core/paragraph", {
@@ -132,13 +132,13 @@ const CONTENT_TEMPLATE = [["core/paragraph", {
   className: "smallHeader",
   placeholder: "Proin interdum eu ligula ut faucibus"
 }]];
-const ALLOWED_BLOCKS = ["core/paragraph"];
+const allowedBlocks = ["core/paragraph"];
 function editComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "defaultHeadingWrapper"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-    template: CONTENT_TEMPLATE,
-    allowedBlocks: ALLOWED_BLOCKS
+    template: contentTemplate,
+    allowedBlocks: allowedBlocks
   }));
 }
 function saveComponent() {

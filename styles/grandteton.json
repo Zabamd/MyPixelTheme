@@ -1,42 +1,40 @@
 {
-  "version": "1.0.0",
+  "version": 2,
+  "title": "anotherOne",
   "settings": {
     "color": {
       "palette": [
         {
-          "color": "#BFD0DC",
+          "color": "#BFD0DCff",
           "name": "Base",
           "slug": "base"
         },
         {
-          "color": "#FF00FF",
+          "color": "#006181ff",
           "name": "Highlight",
           "slug": "Highlight"
         },
         {
-          "color": "#8CB8D2",
+          "color": "#949695ff",
           "name": "Primary",
           "slug": "primary"
         },
         {
-          "color": "#D9DDE1",
+          "color": "#E2B096ff",
           "name": "Secondary",
           "slug": "secondary"
         },
         {
-          "color": "#283735",
+          "color": "#E3CABEff",
           "name": "Tertiary",
           "slug": "tertiary"
         },
         {
-          "color": "#006181",
+          "color": "#949695",
           "name": "pagepackground",
           "slug": "pagepackground"
         }
       ]
-    },
-    "layout": {
-      "contentSize": "840px"
     }
   }
 }

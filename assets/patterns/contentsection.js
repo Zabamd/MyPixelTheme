@@ -1,13 +1,22 @@
 import "../style/contentsection.css";
-import { InnerBlocks } from "@wordpress/block-editor";
+import { Panel, PanelBody, PanelRow } from "@wordpress/components";
+import {
+  InnerBlocks,
+  InspectorControls,
+  ColorPalette,
+} from "@wordpress/block-editor";
+import defaultColors from "../style/colorList";
 
 wp.blocks.registerBlockType("mypixeltheme/contentsection", {
   title: "Content Section",
+  attributes: {
+    background: { type: "string", default: "#BFD0DC" },
+  },
   edit: editComponent,
   save: saveComponent,
 });
 
-const ALLOWED_BLOCKS = [
+const allowedBlocks = [
   "core/heading",
   "core/paragraph",
   "core/list",
@@ -15,7 +24,7 @@ const ALLOWED_BLOCKS = [
   "core/group",
 ];
 
-const CONTENT_TEMPLATE = [
+const contentTemplate = [
   [
     "core/columns",
     {},
@@ -51,22 +60,38 @@ const CONTENT_TEMPLATE = [
   ],
 ];
 
-function editComponent() {
+function editComponent(props) {
   return (
-    <div className="sectionWrapper">
+    <div
+      className="sectionWrapper"
+      style={{ backgroundColor: `${props.attributes.background}` }}
+    >
       <div className="section">
-        <InnerBlocks
-          template={CONTENT_TEMPLATE}
-          allowedBlocks={ALLOWED_BLOCKS}
-        />
+        <InspectorControls>
+          <PanelBody title="backgroundColorPicker" initialOpen={true}>
+            <PanelRow>
+              <ColorPalette
+                colors={defaultColors}
+                value={props.attributes.background}
+                onChange={(colorCode) => {
+                  props.setAttributes({ background: colorCode });
+                }}
+              />
+            </PanelRow>
+          </PanelBody>
+        </InspectorControls>
+        <InnerBlocks template={contentTemplate} allowedBlocks={allowedBlocks} />
       </div>
     </div>
   );
 }
 
-function saveComponent() {
+function saveComponent(props) {
   return (
-    <div className="sectionWrapper">
+    <div
+      className="sectionWrapper"
+      style={{ backgroundColor: `${props.attributes.background}` }}
+    >
       <div className="section">
         <InnerBlocks.Content />
       </div>

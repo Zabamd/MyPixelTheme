@@ -1,42 +1,40 @@
 {
-  "version": "1.0.0",
+  "version": 2,
+  "title": "Yellowstone",
   "settings": {
     "color": {
       "palette": [
         {
-          "color": "#BFD0DC",
+          "color": "#8AAEC2ff",
           "name": "Base",
           "slug": "base"
         },
         {
-          "color": "#FF00FF",
+          "color": "#517889ff",
           "name": "Highlight",
           "slug": "Highlight"
         },
         {
-          "color": "#8CB8D2",
+          "color": "#64A5C5ff",
           "name": "Primary",
           "slug": "primary"
         },
         {
-          "color": "#D9DDE1",
+          "color": "#E8E2E0ff",
           "name": "Secondary",
           "slug": "secondary"
         },
         {
-          "color": "#283735",
+          "color": "#244D42ff",
           "name": "Tertiary",
           "slug": "tertiary"
         },
         {
-          "color": "#006181",
+          "color": "#2B3F44",
           "name": "pagepackground",
           "slug": "pagepackground"
         }
       ]
-    },
-    "layout": {
-      "contentSize": "840px"
     }
   }
 }

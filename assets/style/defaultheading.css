@@ -18,7 +18,7 @@
 }
 .defaultHeadingWrapper > p:nth-child(2n),
 .largeHeader {
-  color: #ffa500;
+  color: var(--wp--preset--color--highlight);
   font-size: 42px;
 }
 .defaultHeadingWrapper > p:nth-child(2n + 3),

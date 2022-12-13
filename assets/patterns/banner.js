@@ -7,11 +7,15 @@ wp.blocks.registerBlockType("mypixeltheme/banner", {
   save: saveComponent,
 });
 
-const CONTENT_TEMPLATE = [
-  ["mypixeltheme/defaultheading"]
-];
+const contentTemplate = [["mypixeltheme/defaultheading"]];
 
-const ALLOWED_BLOCKS = ["core/paragraph", "core/heading","mypixeltheme/defaultheading", "core/image","core/group"];
+const allowedBlocks = [
+  "core/paragraph",
+  "core/heading",
+  "mypixeltheme/defaultheading",
+  "core/image",
+  "core/group",
+];
 
 function editComponent() {
   return (
@@ -19,8 +23,8 @@ function editComponent() {
       <div className="page-banner">
         <InnerBlocks
           orientation="vertical"
-          template={CONTENT_TEMPLATE}
-          allowedBlocks={ALLOWED_BLOCKS}
+          template={contentTemplate}
+          allowedBlocks={allowedBlocks}
         />
       </div>
     </div>
