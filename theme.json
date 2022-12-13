@@ -4,7 +4,7 @@
     "color": {
       "palette": [
         { "slug": "primarybg", "color": "#5CA8CE70", "name": "Primary Background" },
-        { "slug": "highlight", "color": "#ffa500", "name": "Primary Highlight" },
+        { "slug": "highlight", "color": "#FF00FF", "name": "Primary Highlight" },
         { "slug": "secondarybg", "color": "#EA804F5C", "name": "Secondary Background" }
       ]
     },

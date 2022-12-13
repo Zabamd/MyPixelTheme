@@ -18,7 +18,7 @@
 }
 .defaultHeadingWrapper > p:nth-child(2n),
 .largeHeader {
-  color: orange;
+  color: #ffa500;
   font-size: 42px;
 }
 .defaultHeadingWrapper > p:nth-child(2n + 3),
