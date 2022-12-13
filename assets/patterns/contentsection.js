@@ -5,7 +5,7 @@ import {
   InspectorControls,
   ColorPalette,
 } from "@wordpress/block-editor";
-import defaultColors from "../style/colorList";
+import defaultColors from "../colorList";
 
 wp.blocks.registerBlockType("mypixeltheme/contentsection", {
   title: "Content Section",
