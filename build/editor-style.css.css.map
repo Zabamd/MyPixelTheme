@@ -1,0 +1,1 @@
+{"version":3,"file":"editor-style.css.css","mappings":";;;AAAA;IACI,kBAAkB;IAClB,YAAY;AAChB,C","sources":["webpack://mypixeltheme/./editor-style.css"],"sourcesContent":[".page-header {\n    position: absolute;\n    width: 100vw;\n}"],"names":[],"sourceRoot":""}

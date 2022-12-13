@@ -1,0 +1,1 @@
+{"version":3,"file":"./style-style.css.css","mappings":";;;AAAA;;;;CAIC;;AAED;IACI,kBAAkB;IAClB,YAAY;AAChB,C","sources":["webpack://mypixeltheme/./style.css"],"sourcesContent":["/*\n*Theme name:  MyPixel\n*Author: Amadeusz\n*Version: 1.0.0\n*/\n\n.page-header {\n    position: absolute;\n    width: 100vw;\n}"],"names":[],"sourceRoot":""}

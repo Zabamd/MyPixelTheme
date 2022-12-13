@@ -14,7 +14,7 @@ class MyPixelTheme
     {
         add_theme_support("editor-styles");
         add_theme_support("wp-block-styles");
-        add_editor_style("editor-style.css");
+        add_editor_style("./editor-style.css");
     }
 
     function enqueueThemeStyle(): void
