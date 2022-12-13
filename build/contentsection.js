@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./assets/style/colorList.js":
-/*!***********************************!*\
-  !*** ./assets/style/colorList.js ***!
-  \***********************************/
+/***/ "./assets/colorList.js":
+/*!*****************************!*\
+  !*** ./assets/colorList.js ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -213,7 +213,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _style_colorList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../style/colorList */ "./assets/style/colorList.js");
+/* harmony import */ var _colorList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../colorList */ "./assets/colorList.js");
 
 
 
@@ -251,7 +251,7 @@ function editComponent(props) {
     title: "backgroundColorPicker",
     initialOpen: true
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.ColorPalette, {
-    colors: _style_colorList__WEBPACK_IMPORTED_MODULE_4__["default"],
+    colors: _colorList__WEBPACK_IMPORTED_MODULE_4__["default"],
     value: props.attributes.background,
     onChange: colorCode => {
       props.setAttributes({
