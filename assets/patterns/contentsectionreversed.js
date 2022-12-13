@@ -1,5 +1,5 @@
+import "../style/contentsectionreversed.css";
 import defaultColors from "../colorList";
-import "../style/contentsection.css";
 import { PanelBody, PanelRow } from "@wordpress/components";
 import {
   InnerBlocks,
@@ -7,12 +7,12 @@ import {
   ColorPalette,
 } from "@wordpress/block-editor";
 
-wp.blocks.registerBlockType("mypixeltheme/contentsection", {
-  title: "Content Section",
+wp.blocks.registerBlockType("mypixeltheme/contentsectionreversed", {
+  title: "Content Section Reversed",
+  category: "MyPixelTheme",
   attributes: {
     background: { type: "string", default: "#BFD0DC" },
   },
-  category: "MyPixelTheme",
   edit: editComponent,
   save: saveComponent,
 });
@@ -35,11 +35,10 @@ const contentTemplate = [
         {},
         [
           [
-            "core/heading",
+            "core/paragraph",
             {
-              level: 1,
-              placeholder: "Section heading",
-              className: "contentSectionHeading",
+              placeholder: "Section Paragraph",
+              className: "contentSectionParagraph",
             },
           ],
         ],
@@ -49,10 +48,11 @@ const contentTemplate = [
         {},
         [
           [
-            "core/paragraph",
+            "core/heading",
             {
-              placeholder: "Section Paragraph",
-              className: "contentSectionParagraph",
+              level: 1,
+              placeholder: "Section heading",
+              className: "contentSectionHeading",
             },
           ],
         ],

@@ -1,8 +1,15 @@
 import "../style/banner.css";
-import { InnerBlocks } from "@wordpress/block-editor";
+import {
+  InnerBlocks,
+  InspectorControls,
+  MediaUpload,
+  MediaUploadCheck,
+} from "@wordpress/block-editor";
+import { Button, PanelBody, PanelRow } from "@wordpress/components";
 
 wp.blocks.registerBlockType("mypixeltheme/banner", {
   title: "Banner",
+  category: "MyPixelTheme",
   edit: editComponent,
   save: saveComponent,
 });
@@ -21,6 +28,15 @@ function editComponent() {
   return (
     <div className="banner-wrapper">
       <div className="page-banner">
+        <InspectorControls>
+          <PanelBody title="Background Image Upload" initialOpen={true}>
+            <MediaUploadCheck>
+              <MediaUpload onSelect={} value={} render={({ open }) => {
+                return <Button onClick={ open } >Choose Image</Button>
+              }} />
+            </MediaUploadCheck>
+          </PanelBody>
+        </InspectorControls>
         <InnerBlocks
           orientation="vertical"
           template={contentTemplate}

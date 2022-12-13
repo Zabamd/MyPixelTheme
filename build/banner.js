@@ -1,149 +1,25 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./assets/style/banner.css":
-/*!*********************************!*\
-  !*** ./assets/style/banner.css ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./assets/patterns/banner.js":
+/*!***********************************!*\
+  !*** ./assets/patterns/banner.js ***!
+  \***********************************/
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "@wordpress/block-editor":
-/*!*************************************!*\
-  !*** external ["wp","blockEditor"] ***!
-  \*************************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["blockEditor"];
-
-/***/ }),
-
-/***/ "@wordpress/element":
-/*!*********************************!*\
-  !*** external ["wp","element"] ***!
-  \*********************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["element"];
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/assets/patterns/banner.js: JSX attributes must only be assigned a non-empty expression. (34:36)\n\n\u001b[0m \u001b[90m 32 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33mPanelBody\u001b[39m title\u001b[33m=\u001b[39m\u001b[32m\"Background Image Upload\"\u001b[39m initialOpen\u001b[33m=\u001b[39m{\u001b[36mtrue\u001b[39m}\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m             \u001b[33m<\u001b[39m\u001b[33mMediaUploadCheck\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m               \u001b[33m<\u001b[39m\u001b[33mMediaUpload\u001b[39m onSelect\u001b[33m=\u001b[39m{} value\u001b[33m=\u001b[39m{} render \u001b[33m=\u001b[39m{}\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m             \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mMediaUploadCheck\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m           \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mPanelBody\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mInspectorControls\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n    at instantiate (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:67:32)\n    at constructor (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:364:12)\n    at JSXParserMixin.raise (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:3365:19)\n    at JSXParserMixin.jsxParseAttributeValue (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7060:16)\n    at JSXParserMixin.jsxParseAttribute (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7115:38)\n    at JSXParserMixin.jsxParseOpeningElementAfterName (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7130:28)\n    at JSXParserMixin.jsxParseOpeningElementAt (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7125:17)\n    at JSXParserMixin.jsxParseElementAt (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7151:33)\n    at JSXParserMixin.jsxParseElementAt (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7163:32)\n    at JSXParserMixin.jsxParseElementAt (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7163:32)\n    at JSXParserMixin.jsxParseElementAt (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7163:32)\n    at JSXParserMixin.jsxParseElementAt (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7163:32)\n    at JSXParserMixin.jsxParseElementAt (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7163:32)\n    at JSXParserMixin.jsxParseElement (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7221:17)\n    at JSXParserMixin.parseExprAtom (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7234:19)\n    at JSXParserMixin.parseExprSubscripts (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:11171:23)\n    at JSXParserMixin.parseUpdate (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:11153:21)\n    at JSXParserMixin.parseMaybeUnary (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:11127:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10956:61)\n    at JSXParserMixin.parseExprOps (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10962:23)\n    at JSXParserMixin.parseMaybeConditional (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10937:23)\n    at JSXParserMixin.parseMaybeAssign (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10895:21)\n    at /home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10863:39\n    at JSXParserMixin.allowInAnd (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:12640:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10863:17)\n    at JSXParserMixin.parseParenAndDistinguishExpression (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:11817:28)\n    at JSXParserMixin.parseExprAtom (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:11446:23)\n    at JSXParserMixin.parseExprAtom (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:7239:20)\n    at JSXParserMixin.parseExprSubscripts (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:11171:23)\n    at JSXParserMixin.parseUpdate (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:11153:21)\n    at JSXParserMixin.parseMaybeUnary (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:11127:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10956:61)\n    at JSXParserMixin.parseExprOps (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10962:23)\n    at JSXParserMixin.parseMaybeConditional (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10937:23)\n    at JSXParserMixin.parseMaybeAssign (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10895:21)\n    at JSXParserMixin.parseExpressionBase (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10845:23)\n    at /home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10840:39\n    at JSXParserMixin.allowInAnd (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:12635:16)\n    at JSXParserMixin.parseExpression (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:10840:17)\n    at JSXParserMixin.parseReturnStatement (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:13353:28)\n    at JSXParserMixin.parseStatementContent (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:12992:21)\n    at JSXParserMixin.parseStatementLike (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:12952:17)\n    at JSXParserMixin.parseStatementListItem (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:12937:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:13558:61)\n    at JSXParserMixin.parseBlockBody (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:13550:10)\n    at JSXParserMixin.parseBlock (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:13538:10)\n    at JSXParserMixin.parseFunctionBody (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:12287:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:12271:10)\n    at /home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:13701:12\n    at JSXParserMixin.withSmartMixTopicForbiddingContext (/home/nomachine/devLocal/newsite/app/public/wp-content/themes/MyPixelTheme/node_modules/@babel/parser/lib/index.js:12617:14)");
 
 /***/ })
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
 /******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./assets/patterns/banner.js"]();
 /******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-/*!***********************************!*\
-  !*** ./assets/patterns/banner.js ***!
-  \***********************************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_banner_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/banner.css */ "./assets/style/banner.css");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-wp.blocks.registerBlockType("mypixeltheme/banner", {
-  title: "Banner",
-  edit: editComponent,
-  save: saveComponent
-});
-const contentTemplate = [["mypixeltheme/defaultheading"]];
-const allowedBlocks = ["core/paragraph", "core/heading", "mypixeltheme/defaultheading", "core/image", "core/group"];
-function editComponent() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner-wrapper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "page-banner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-    orientation: "vertical",
-    template: contentTemplate,
-    allowedBlocks: allowedBlocks
-  })));
-}
-function saveComponent() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner-wrapper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "page-banner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null)));
-}
-})();
-
 /******/ })()
 ;
 //# sourceMappingURL=banner.js.map

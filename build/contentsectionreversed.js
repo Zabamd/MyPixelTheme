@@ -89,10 +89,10 @@ const defaultColors = [{
 
 /***/ }),
 
-/***/ "./assets/style/contentsection.css":
-/*!*****************************************!*\
-  !*** ./assets/style/contentsection.css ***!
-  \*****************************************/
+/***/ "./assets/style/contentsectionreversed.css":
+/*!*************************************************!*\
+  !*** ./assets/style/contentsectionreversed.css ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -202,14 +202,14 @@ module.exports = window["wp"]["element"];
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!*******************************************!*\
-  !*** ./assets/patterns/contentsection.js ***!
-  \*******************************************/
+/*!***************************************************!*\
+  !*** ./assets/patterns/contentsectionreversed.js ***!
+  \***************************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _colorList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../colorList */ "./assets/colorList.js");
-/* harmony import */ var _style_contentsection_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/contentsection.css */ "./assets/style/contentsection.css");
+/* harmony import */ var _style_contentsectionreversed_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/contentsectionreversed.css */ "./assets/style/contentsectionreversed.css");
+/* harmony import */ var _colorList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../colorList */ "./assets/colorList.js");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
@@ -219,26 +219,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-wp.blocks.registerBlockType("mypixeltheme/contentsection", {
-  title: "Content Section",
+wp.blocks.registerBlockType("mypixeltheme/contentsectionreversed", {
+  title: "Content Section Reversed",
+  category: "MyPixelTheme",
   attributes: {
     background: {
       type: "string",
       default: "#BFD0DC"
     }
   },
-  category: "MyPixelTheme",
   edit: editComponent,
   save: saveComponent
 });
 const allowedBlocks = ["core/heading", "core/paragraph", "core/list", "core/image", "core/group"];
-const contentTemplate = [["core/columns", {}, [["core/column", {}, [["core/heading", {
+const contentTemplate = [["core/columns", {}, [["core/column", {}, [["core/paragraph", {
+  placeholder: "Section Paragraph",
+  className: "contentSectionParagraph"
+}]]], ["core/column", {}, [["core/heading", {
   level: 1,
   placeholder: "Section heading",
   className: "contentSectionHeading"
-}]]], ["core/column", {}, [["core/paragraph", {
-  placeholder: "Section Paragraph",
-  className: "contentSectionParagraph"
 }]]]]]];
 function editComponent(props) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -254,7 +254,7 @@ function editComponent(props) {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__.ColorPalette, {
     disableCustomColors: true,
     clearable: false,
-    colors: _colorList__WEBPACK_IMPORTED_MODULE_1__["default"],
+    colors: _colorList__WEBPACK_IMPORTED_MODULE_2__["default"],
     value: props.attributes.background,
     onChange: colorCode => {
       props.setAttributes({
@@ -280,4 +280,4 @@ function saveComponent(props) {
 
 /******/ })()
 ;
-//# sourceMappingURL=contentsection.js.map
+//# sourceMappingURL=contentsectionreversed.js.map

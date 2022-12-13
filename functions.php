@@ -29,7 +29,7 @@ $theme = new MyPixelTheme();
 //Blocks init
 $banner = new Block("banner");
 $contentSection = new Block("contentsection");
+$contentSectionReversed = new Block("contentsectionreversed");
 $defaultHeading = new Block("defaultheading");
-
 
 ?>

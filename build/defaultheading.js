@@ -119,6 +119,7 @@ __webpack_require__.r(__webpack_exports__);
 
 wp.blocks.registerBlockType("mypixeltheme/defaultheading", {
   title: "Default heading",
+  category: "MyPixelTheme",
   edit: editComponent,
   save: saveComponent
 });
