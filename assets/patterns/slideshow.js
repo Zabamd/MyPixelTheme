@@ -9,12 +9,14 @@ wp.blocks.registerBlockType("mypixeltheme/slideshow", {
 });
 
 const customTemplate = [["mypixeltheme/slide"]];
+const allowedBlocks = [["mypixeltheme/slide"]];
 
 function editComponent() {
   return (
     <div className="slideShowWrapper">
       <InnerBlocks
         template={customTemplate}
+        allowedBlocks={allowedBlocks}
       />
     </div>
   );
