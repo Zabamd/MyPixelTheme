@@ -1,4 +1,1 @@
-.page-header {
-    position: absolute;
-    width: 100vw;
-}
+@import "./style.css";

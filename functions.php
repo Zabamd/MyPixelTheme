@@ -8,6 +8,7 @@ class MyPixelTheme
     {
         add_action("after_setup_theme", [$this, "themeSetup"]);
         add_action("wp_enqueue_scripts", [$this, "enqueueThemeStyle"]);
+        add_action("init", [$this, "registerCategories"]);
     }
 
     function themeSetup(): void
@@ -20,6 +21,13 @@ class MyPixelTheme
     function enqueueThemeStyle(): void
     {
         wp_enqueue_style("main_style", get_stylesheet_uri());
+    }
+
+    function registerCategories()
+    {
+        register_block_pattern_category("mypixeltheme", [
+            "label" => __("mypixeltheme", "My Pixel theme"),
+        ]);
     }
 }
 

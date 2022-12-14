@@ -13,7 +13,7 @@ class Block
         $this->registerBlock();
         $this->registerStyles();
     }
-    private function registerStyles(): void
+    private function registerStyles()
     {
         wp_enqueue_style(
             $this->blockName . "_style",

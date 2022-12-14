@@ -8,6 +8,7 @@
   "dependencies": {
     "@wordpress/block-editor": "^10.5.0",
     "@wordpress/blocks": "^11.21.0",
+    "@wordpress/element": "^4.20.0",
     "@wordpress/scripts": "^24.6.0"
   },
   "name": "mypixeltheme",

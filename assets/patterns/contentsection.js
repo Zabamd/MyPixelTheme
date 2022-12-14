@@ -1,18 +1,14 @@
 import defaultColors from "../colorList";
 import "../style/contentsection.css";
 import { PanelBody, PanelRow } from "@wordpress/components";
-import {
-  InnerBlocks,
-  InspectorControls,
-  ColorPalette,
-} from "@wordpress/block-editor";
+import { InnerBlocks, InspectorControls, ColorPalette} from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/contentsection", {
   title: "Content Section",
   attributes: {
     background: { type: "string", default: "#BFD0DC" },
   },
-  category: "MyPixelTheme",
+  category: "mypixeltheme",
   edit: editComponent,
   save: saveComponent,
 });

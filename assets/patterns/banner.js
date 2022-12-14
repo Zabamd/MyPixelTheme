@@ -3,13 +3,14 @@ import { InnerBlocks } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/banner", {
   title: "Banner",
+  category: "mypixeltheme",
   edit: editComponent,
   save: saveComponent,
 });
 
-const CONTENT_TEMPLATE = [["mypixeltheme/defaultheading"]];
+const contentTemplate = [["mypixeltheme/defaultheading"]];
 
-const ALLOWED_BLOCKS = [
+const allowedBlocks = [
   "core/paragraph",
   "core/heading",
   "mypixeltheme/defaultheading",
@@ -23,8 +24,8 @@ function editComponent() {
       <div className="page-banner">
         <InnerBlocks
           orientation="vertical"
-          template={CONTENT_TEMPLATE}
-          allowedBlocks={ALLOWED_BLOCKS}
+          template={contentTemplate}
+          allowedBlocks={allowedBlocks}
         />
       </div>
     </div>
