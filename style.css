@@ -14,6 +14,20 @@
   color: #FFF;
   border-radius: 0 0 75px 75px ;
 }
+
+.page-footer{
+  height: 7vh;
+  background-color: var(--wp--preset--color--header);
+  color:#FFF;
+}
+.page-footer-upper{
+  display: flex;
+  justify-items:stretch;
+  flex-direction: column;
+}
+.page-footer-lower{
+  background-color: var(--wp--preset--color--header);
+}
 .custom-logo {
   height:7vh !important;
   width: auto;
