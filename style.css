@@ -6,9 +6,18 @@
 
 .page-header {
   position: absolute;
-  width: 100vw;
+  left:50%;
+  transform: translateX(-50%);
+  height: 10vh;
+  width: 80vw;
+  background-color: var(--wp--preset--color--header);
+  color: #FFF;
+  border-radius: 0 0 75px 75px ;
 }
-
+.custom-logo {
+  height:7vh !important;
+  width: auto;
+}
 .queryLoopSection {
   padding: 5%;
   background-color: var(--wp--preset--color--primary);

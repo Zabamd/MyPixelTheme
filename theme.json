@@ -32,6 +32,11 @@
           "color": "#006181",
           "name": "pagepackground",
           "slug": "pagepackground"
+        },
+        {
+          "color": "#533D1D",
+          "name": "header",
+          "slug": "header"
         }
       ]
     }
