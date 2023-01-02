@@ -9,7 +9,7 @@ class MyPixelTheme
         add_action("after_setup_theme", [$this, "themeSetup"]);
         add_action("wp_enqueue_scripts", [$this, "enqueueThemeStyle"]);
         add_action("init", [$this, "registerPatternCategories"]);
-        add_filter('block_categories_all', [$this,'registerBlockCategories']);
+        add_filter("block_categories_all", [$this, "registerBlockCategories"]);
     }
 
     function themeSetup(): void
@@ -31,16 +31,13 @@ class MyPixelTheme
         ]);
     }
 
-    function registerBlockCategories(array $block_categories) : array
+    function registerBlockCategories(array $block_categories): array
     {
-        array_unshift(
-            $block_categories,
-            array(
-                'slug'  => 'my-pixel-theme',
-                'title' => __( 'My Pixel Theme'),
-                'icon'  => null,
-            )
-        );
+        array_unshift($block_categories, [
+            "slug" => "my-pixel-theme",
+            "title" => __("My Pixel Theme"),
+            "icon" => null,
+        ]);
         return $block_categories;
     }
 }
@@ -53,8 +50,3 @@ $banner = new Block("banner");
 $contentSection = new Block("contentsection");
 $contentSectionReversed = new Block("contentsectionreversed");
 $defaultHeading = new Block("defaultheading");
-/* $slideShow = new Block("slideshow");
-$slide = new Block("slide"); */
-$counter = new Block("counter");
-
-

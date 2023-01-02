@@ -227,7 +227,7 @@ wp.blocks.registerBlockType("mypixeltheme/contentsection", {
       default: "#BFD0DC"
     }
   },
-  category: 'my-pixel-theme',
+  category: "my-pixel-theme",
   edit: editComponent,
   save: saveComponent
 });

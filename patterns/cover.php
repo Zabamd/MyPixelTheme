@@ -10,7 +10,9 @@
 ); ?>","id":3424,"dimRatio":50,"overlayColor":"contrast","align":"full", "templateLock":"contentOnly"} -->
 <div class="wp-block-cover alignfull">
     <span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim"></span>
-    <img class="wp-block-cover__image-background wp-image-3424" alt="" src="<?php echo esc_url( get_theme_file_uri("assets/img/banner.jpg")); ?>" data-object-fit="cover"/>
+    <img class="wp-block-cover__image-background wp-image-3424" alt="" src="<?php echo esc_url(
+        get_theme_file_uri("assets/img/banner.jpg")
+    ); ?>" data-object-fit="cover"/>
     <div class="wp-block-cover__inner-container">
             <!-- wp:group {"templateLock":"contentOnly","style":{"spacing":{"blockGap":"2.5rem"}},"layout":{"type":"constrained","wideSize":"%","contentSize":"75%","justifyContent":"center"}} -->
     <div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->

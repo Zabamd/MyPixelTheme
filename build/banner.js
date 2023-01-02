@@ -119,7 +119,7 @@ __webpack_require__.r(__webpack_exports__);
 
 wp.blocks.registerBlockType("mypixeltheme/banner", {
   title: "Banner",
-  category: 'my-pixel-theme',
+  category: "my-pixel-theme",
   edit: editComponent,
   save: saveComponent
 });

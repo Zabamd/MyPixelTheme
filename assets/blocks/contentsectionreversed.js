@@ -1,11 +1,15 @@
 import "../style/contentsectionreversed.css";
 import defaultColors from "../colorList";
 import { PanelBody, PanelRow } from "@wordpress/components";
-import { InnerBlocks, InspectorControls, ColorPalette } from "@wordpress/block-editor";
+import {
+  InnerBlocks,
+  InspectorControls,
+  ColorPalette,
+} from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/contentsectionreversed", {
   title: "Content Section Reversed",
-  category: 'my-pixel-theme',
+  category: "my-pixel-theme",
   attributes: {
     background: { type: "string", default: "#BFD0DC" },
   },

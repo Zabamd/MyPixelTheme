@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "wp-scripts start assets/blocks/* src/index.js ",
+    "start": "wp-scripts start assets/blocks/* ",
     "build": "wp-scripts build",
     "clean": "prettier * --write",
     "push": "git push https://github.com/Zabamd/MyPixelTheme.git"

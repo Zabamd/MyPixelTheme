@@ -221,7 +221,7 @@ __webpack_require__.r(__webpack_exports__);
 
 wp.blocks.registerBlockType("mypixeltheme/contentsectionreversed", {
   title: "Content Section Reversed",
-  category: 'my-pixel-theme',
+  category: "my-pixel-theme",
   attributes: {
     background: {
       type: "string",
