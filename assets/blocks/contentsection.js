@@ -8,7 +8,7 @@ wp.blocks.registerBlockType("mypixeltheme/contentsection", {
   attributes: {
     background: { type: "string", default: "#BFD0DC" },
   },
-  category: "mypixeltheme",
+  category: 'my-pixel-theme',
   edit: editComponent,
   save: saveComponent,
 });

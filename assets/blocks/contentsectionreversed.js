@@ -5,7 +5,7 @@ import { InnerBlocks, InspectorControls, ColorPalette } from "@wordpress/block-e
 
 wp.blocks.registerBlockType("mypixeltheme/contentsectionreversed", {
   title: "Content Section Reversed",
-  category: "mypixeltheme",
+  category: 'my-pixel-theme',
   attributes: {
     background: { type: "string", default: "#BFD0DC" },
   },

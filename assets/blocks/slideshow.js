@@ -3,7 +3,7 @@ import { InnerBlocks } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/slideshow", {
   title: "Slide Show",
-  category: "mypixeltheme",
+  category: 'my-pixel-theme',
   save: saveComponent,
   edit: editComponent,
 });

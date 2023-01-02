@@ -8,7 +8,8 @@ class MyPixelTheme
     {
         add_action("after_setup_theme", [$this, "themeSetup"]);
         add_action("wp_enqueue_scripts", [$this, "enqueueThemeStyle"]);
-        add_action("init", [$this, "registerCategories"]);
+        add_action("init", [$this, "registerPatternCategories"]);
+        add_filter('block_categories_all', [$this,'registerBlockCategories']);
     }
 
     function themeSetup(): void
@@ -23,11 +24,24 @@ class MyPixelTheme
         wp_enqueue_style("main_style", get_stylesheet_uri());
     }
 
-    function registerCategories()
+    function registerPatternCategories()
     {
         register_block_pattern_category("mypixeltheme", [
-            "label" => __("mypixeltheme", "My Pixel theme"),
+            "label" => __("My Pixel Theme", "mypixeltheme"),
         ]);
+    }
+
+    function registerBlockCategories(array $block_categories) : array
+    {
+        array_unshift(
+            $block_categories,
+            array(
+                'slug'  => 'my-pixel-theme',
+                'title' => __( 'My Pixel Theme'),
+                'icon'  => null,
+            )
+        );
+        return $block_categories;
     }
 }
 

@@ -3,7 +3,7 @@ import { InnerBlocks } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/defaultheading", {
   title: "Default heading",
-  category: "mypixeltheme",
+  category: 'my-pixel-theme',
   edit: editComponent,
   save: saveComponent,
 });

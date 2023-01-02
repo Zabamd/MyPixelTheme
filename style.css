@@ -5,14 +5,11 @@
 */
 
 .page-header {
-  position: absolute;
-  left:50%;
-  transform: translateX(-50%);
+  position: absolute;;
   height: 10vh;
   width: 80vw;
-  background-color: var(--wp--preset--color--header);
   color: #FFF;
-  border-radius: 0 0 75px 75px ;
+  overflow: hidden;
 }
 
 .page-footer{
