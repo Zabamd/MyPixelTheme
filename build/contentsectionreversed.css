@@ -1,1 +1,26 @@
-.sectionWrapper{height:auto;width:100vw}.section{padding:5%}.contentSectionHeading,.section>*{margin-top:0;padding-top:0}.contentSectionHeading{text-align:center}.contentSectionParagraph{margin-top:0;padding-top:0}
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/style/contentsectionreversed.css ***!
+  \*********************************************************************************************************************************************************************************************/
+.sectionWrapper {
+  width: 100vw;
+  height: auto;
+}
+.section {
+  padding: 5%;
+}
+.section > * {
+  padding-top: 0;
+  margin-top: 0;
+}
+.contentSectionHeading {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+.contentSectionParagraph {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+/*# sourceMappingURL=contentsectionreversed.css.map*/

@@ -3,21 +3,18 @@ import { InnerBlocks } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/slideshow", {
   title: "Slide Show",
-  category: 'my-pixel-theme',
+  category: "my-pixel-theme",
   save: saveComponent,
   edit: editComponent,
 });
 
 const customTemplate = [["mypixeltheme/slide"]];
-const allowedBlocks = [["mypixeltheme/slide"]];
+const allowedBlocks = ["mypixeltheme/slide"];
 
 function editComponent() {
   return (
     <div className="slideShowWrapper">
-      <InnerBlocks
-        template={customTemplate}
-        allowedBlocks={allowedBlocks}
-      />
+      <InnerBlocks template={customTemplate} allowedBlocks={allowedBlocks} />
     </div>
   );
 }

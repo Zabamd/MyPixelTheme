@@ -1,1 +1,27 @@
-.page-banner{align-items:center;background-image:url(images/banner.d5ae1e99.jpg);background-size:cover;display:flex;flex-direction:column;height:70vh;justify-content:center;width:100vw}.heading{font-size:36px;font-weight:bolder;padding:2rem}.sub-heading{font-size:24px;padding:2rem}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/style/banner.css ***!
+  \*****************************************************************************************************************************************************************************/
+.page-banner {
+  background-image: url(images/banner.d5ae1e99.jpg);
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: bolder;
+  padding: 2rem;
+}
+
+.sub-heading {
+  padding: 2rem;
+  font-size: 24px;
+}
+
+
+/*# sourceMappingURL=banner.css.map*/

@@ -3,18 +3,19 @@ import { InnerBlocks } from "@wordpress/block-editor";
 
 wp.blocks.registerBlockType("mypixeltheme/slide", {
   title: "Slide",
-  category: 'my-pixel-theme',
+  category: "my-pixel-theme",
   save: saveComponent,
   edit: editComponent,
 });
 
-const contentTemplate = [["mypixeltheme/defaultheading"]];
+const contentTemplate = [["mypixeltheme/banner"]];
 
- const allowedBlocks = [
+const allowedBlocks = [
   "core/paragraph",
   "core/heading",
   "mypixeltheme/defaultheading",
-]; 
+  "mypixeltheme/banner",
+];
 
 function editComponent() {
   return (
